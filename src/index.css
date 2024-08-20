@@ -785,6 +785,45 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#cbe1e1\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 225 225 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f4f4f4\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#c22b2b\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 43 43 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#e7e1e1\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 225 225 / var(--tw-bg-opacity));
+}
+
+.bg-\[\]{
+  background-color: ;
+}
+
+.bg-\[\#eaf0f0\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 240 240 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#e8f3f3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 243 243 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f3f9f9\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 249 249 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\/assets\/hero\.png\'\)\]{
   background-image: url('./assets/hero.png');
 }
@@ -830,6 +869,16 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .text-center{
