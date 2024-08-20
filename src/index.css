@@ -888,6 +888,34 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.outline{
+  outline-style: solid;
+}
+
+.outline-\[1px\]{
+  outline-width: 1px;
+}
+
+.outline-\[5px\]{
+  outline-width: 5px;
+}
+
+.outline-\[1\]{
+  outline-width: 1;
+}
+
+.outline-1{
+  outline-width: 1px;
+}
+
+.outline-\[\.5px\]{
+  outline-width: .5px;
+}
+
+.outline-white{
+  outline-color: #fff;
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -996,6 +1024,10 @@ video {
 
   .md\:outline{
     outline-style: solid;
+  }
+
+  .md\:outline-1{
+    outline-width: 1px;
   }
 
   .md\:outline-white{
