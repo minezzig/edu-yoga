@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <link href="./src/index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/c82e315a12.js"
       crossorigin="anonymous"
@@ -11,17 +13,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Edu Azevedo Yoga" />
-    <meta property="og:description" content="Profe de yoga, Madrid, España, Edu Azevedo" />
-    <meta property="og:image" content="https://eduyoga.vercel.app/favicon.png"  />
+    <meta
+      property="og:description"
+      content="Profesor de yoga, Madrid, España."
+    />
+    <meta
+      property="og:image"
+      content="https://eduyoga.vercel.app/favicon.png"
+    />
     <meta property="og:url" content="https://eduyoga.vercel.app" />
-    <title>Edu Yoga</title>
+    <title>Edu Azevedo Yoga</title>
   </head>
   <body class="font-quicksand bg-[#142328]">
     <header
       id="header"
       class="h-dvh bg-gray-700 bg-[url('./assets/hero.png')] bg-cover bg-center transition duration-500"
     >
-      <nav class="flex w-full items-center justify-between py-5 px-10">
+      <nav class="flex w-full items-center justify-between p-5 md:px-10">
         <a href="/">
           <div class="object-fit h-10 w-10 md:h-16 md:w-16">
             <img
@@ -55,7 +63,7 @@
         </ul>
       </nav>
       <div class="flex h-full translate-x-5 translate-y-60 justify-center">
-        <h1 class="text-4xl text-white">exhala...</h1>
+        <h1 class="text-4xl text-white" data-aos="zoom-in-up" data-aos-duration="2000">exhala...</h1>
       </div>
     </header>
     <!-- about section -->
@@ -64,42 +72,44 @@
       class="min-h-96 p-10"
       id="conoceme"
     >
-      <div class="flex flex-col items-center justify-center">
-        <div
-          class="mb-5 text-5xl uppercase tracking-widest text-[rgba(0,0,0,.1)] md:text-7xl"
-        >
-          conóceme
-        </div>
-        <div class="mb-3 flex flex-col items-center justify-center">
-          <div class="h-32 w-32 overflow-hidden rounded-full border">
-            <img
-              src="./src/assets/avatar.png"
-              alt="avatar-edu"
-              class="h-full w-full object-cover"
-            />
+      <div data-aos="fade-up">
+        <div class="flex flex-col items-center justify-center">
+          <div
+            class="mb-5 text-[10vw] uppercase tracking-widest text-[rgba(0,0,0,.1)] md:text-7xl"
+          >
+            conóceme
           </div>
-          <div class="ml-3 text-2xl">Edu Azevedo</div>
+          <div class="mb-3 flex flex-col items-center justify-center">
+            <div class="h-32 w-32 overflow-hidden rounded-full border">
+              <img
+                src="./src/assets/avatar.png"
+                alt="avatar-edu"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="ml-3 text-2xl">Edu Azevedo</div>
+          </div>
         </div>
-      </div>
-      <div class="flex flex-col gap-3">
-        <p>
-          Edu fue entrenado previamente como Instructor de Yoga en Rishikesh,
-          India. Además de sus habilidades en prácticas de Hatha, Ashtanga y
-          Vinyasa, su conocimiento de las estructuras musculares y esqueléticas
-          mejora su capacidad para guiar a los estudiantes a través de sus
-          posturas.
-        </p>
-        <p>
-          Nacido de Brasil, Edu ha pasado los últimos 10 años compartiendo su
-          amor por el yoga con el mundo. Desde ayudar a amigos en São Paulo
-          hasta dar clases en Valencia, ahora está ubicado en Madrid, España.
-          Edu enseña clases semanales en toda Madrid, tanto en estudios de yoga
-          locales como al aire libre a lo largo del hermoso Madrid Río.
-        </p>
-        <p>
-          Edu también está capacitado en masaje tántrico y ofrece clases
-          particulares.
-        </p>
+        <div class="flex flex-col gap-3">
+          <p>
+            Edu fue entrenado previamente como Instructor de Yoga en Rishikesh,
+            India. Además de sus habilidades en prácticas de Hatha, Ashtanga y
+            Vinyasa, su conocimiento de las estructuras musculares y esqueléticas
+            mejora su capacidad para guiar a los estudiantes a través de sus
+            posturas.
+          </p>
+          <p>
+            Nacido de Brasil, Edu ha pasado los últimos 10 años compartiendo su
+            amor por el yoga con el mundo. Desde ayudar a amigos en São Paulo
+            hasta dar clases en Valencia, ahora está ubicado en Madrid, España.
+            Edu enseña clases semanales en toda Madrid, tanto en estudios de yoga
+            locales como al aire libre a lo largo del hermoso Madrid Río.
+          </p>
+          <p>
+            Edu también está capacitado en masaje tántrico y ofrece clases
+            particulares.
+          </p>
+        </div>
       </div>
     </section>
     <!-- encuentrame section -->
@@ -108,11 +118,13 @@
       style="background: linear-gradient(45deg, #84a5b2, #cbe1e1)"
       class="min-h-96 p-10"
     >
-      <div class="flex flex-col items-center justify-center">
-        <div
-          class="mb-5 text-5xl uppercase tracking-widest text-white md:text-7xl"
-        >
-          encúentrame
+      <div data-aos="fade-up">
+        <div class="flex flex-col items-center justify-center">
+          <div
+            class="mb-5 text-[10vw] uppercase tracking-widest text-white md:text-7xl"
+          >
+            encúentrame
+          </div>
         </div>
       </div>
     </section>
@@ -122,19 +134,21 @@
       style="background: linear-gradient(45deg, #cce7f1, #eef1f1)"
       class="min-h-96 p-10"
     >
-      <div class="flex flex-col items-center justify-center">
-        <div
-          class="mb-5 text-5xl uppercase tracking-widest text-[rgba(0,0,0,.1)] md:text-7xl"
-        >
-          clases
-        </div>
-        <div>
-          <p class="text-center">
-            Edu esta de vacaciones. Resumen las clases a partir de <br />1
-            septiembre
-          </p>
-          <div class="mt-5 text-center text-7xl text-white">
-            <i class="fa-solid fa-calendar-xmark"></i>
+      <div data-aos="fade-up">
+        <div class="flex flex-col items-center justify-center">
+          <div
+            class="mb-5 text-[10vw] uppercase tracking-widest text-[rgba(0,0,0,.1)] md:text-7xl"
+          >
+            clases
+          </div>
+          <div>
+            <p class="text-center">
+              Edu esta de vacaciones. Resumen las clases a partir de <br />1
+              septiembre
+            </p>
+            <div class="mt-5 text-center text-7xl text-white">
+              <i class="fa-solid fa-calendar-xmark"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -145,27 +159,33 @@
       style="background: linear-gradient(45deg, #84a5b2, #cbe1e1)"
       class="p-10"
     >
-      <div class="flex flex-col items-center justify-center">
-        <div
-          class="mb-5 text-5xl uppercase tracking-widest text-white md:text-7xl"
-        >
-          contáctame
-        </div>
-        <a href="https://wa.me/34622722429"
-          ><div
-            class="active::bg-[#142328] group cursor-pointer rounded-3xl bg-[#f3f9f9] px-5 py-3 shadow-lg transition duration-300 hover:bg-[#142328] hover:text-white active:text-white"
+      <div data-aos="fade-up">
+        <div class="flex flex-col items-center justify-center">
+          <div
+            class="mb-5 text-[10vw] uppercase tracking-widest text-white md:text-7xl"
           >
-            <span class="group-hover:text-[#25d366]"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></span>
-            Contacta por Whatsapp
-          </div></a
-        >
+            contáctame
+          </div>
+          <a href="https://wa.me/34622722429"
+            ><div
+              class="active::bg-[#142328] group cursor-pointer rounded-3xl bg-[#f3f9f9] px-5 py-3 shadow-lg transition duration-300 hover:bg-[#142328] hover:text-white active:text-white"
+            >
+              <span class="group-hover:text-[#25d366]"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></span>
+              Contacta por Whatsapp
+            </div></a
+          >
+        </div>
       </div>
     </section>
     <footer class="flex items-center justify-center bg-[#142328] p-10">
       <p class="text-white">Developed by &copy; Greg Minezzi 2024</p>
     </footer>
+    <script src="bower_components/aos/dist/aos.js"></script> 
+    <script>
+      AOS.init();
+    </script>
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>
