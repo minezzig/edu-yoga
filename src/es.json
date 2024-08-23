@@ -1,0 +1,30 @@
+{
+  "navbar": {
+    "about": "conóceme",
+    "where": "encuéntrame",
+    "classes": "clases",
+    "contact": "contáctame"
+  },
+  "hero": {
+    "subtitle": "exhala..."
+  },
+  "about": {
+    "heading": "conóceme",
+    "content": "<p> Edu fue entrenado previamente como Instructor de Yoga en Rishikesh, India. Además de sus habilidades en prácticas de Hatha, Ashtanga y Vinyasa, su conocimiento de las estructuras musculares y esqueléticas mejora su capacidad para guiar a los estudiantes a través de sus posturas. </p> <p> Nacido de Brasil, Edu ha pasado los últimos 10 años compartiendo su amor por el yoga con el mundo. Desde ayudar a amigos en São Paulo hasta dar clases en Valencia, ahora está ubicado en Madrid, España. Edu enseña clases semanales en toda Madrid, tanto en estudios de yoga locales como al aire libre a lo largo del hermoso Madrid Río. </p> <p> Edu también está capacitado en masaje tántrico y ofrece clases particulares. </p>"
+  },
+  "where": {
+    "heading": "encuéntrame",
+    "content": "where can you find me.  here"
+  },
+  "classes": {
+    "heading": "clases",
+    "content": "Edu esta de vacaciones. Resumen las clases a partir de 1 septiembre"
+  },
+  "contact": {
+    "heading": "contáctame",
+    "content": "contáctame"
+  },
+  "footer": {
+    "content": "Desarrollado por &copy; Greg Minezzi 2024"
+  }
+}

@@ -25,220 +25,152 @@
     <title>Edu Azevedo Yoga</title>
   </head>
   <body class="bg-[#142328] font-quicksand">
-    <header
-      id="header"
-      class="h-dvh bg-gray-700 bg-[url('./assets/hero.png')] bg-cover bg-center transition duration-500"
-    >
+    <!-- header section -->
+    <header id="header" class="h-dvh bg-gray-700 bg-[url('./assets/hero.png')] bg-cover bg-center transition duration-500">
       <nav class="flex w-full items-center justify-between p-5 md:px-10">
         <a href="/">
           <div class="object-fit h-10 w-10 md:h-16 md:w-16">
-            <img
-              src="logo.svg"
-              class="rounded-full bg-black fill-white p-1 outline outline-[.5px] outline-white md:p-2 md:outline-1"
-            />
+            <img src="logo.svg" class="rounded-full bg-black fill-white p-1 outline outline-[.5px] outline-white md:p-2 md:outline-1"/>
           </div>
         </a>
-        <div
-          id="hamburger"
-          class="group flex cursor-pointer flex-col gap-1 md:hidden"
-        >
-          <div
-            class="h-[2px] w-7 rounded bg-white transition duration-1000 group-hover:bg-gray-300"
-          ></div>
-          <div
-            class="scale-1 h-[2px] w-7 rounded bg-white transition duration-1000 group-hover:bg-gray-300"
-          ></div>
-          <div
-            class="h-[2px] w-7 rounded bg-white transition duration-1000 group-hover:bg-gray-300"
-          ></div>
+        <!-- hamburger -->
+        <div id="hamburger" class="group flex cursor-pointer flex-col gap-1 md:hidden">
+          <div class="h-[2px] w-7 rounded bg-white transition duration-1000 group-hover:bg-gray-300"></div>
+          <div class="scale-1 h-[2px] w-7 rounded bg-white transition duration-1000 group-hover:bg-gray-300"></div>
+          <div class="h-[2px] w-7 rounded bg-white transition duration-1000 group-hover:bg-gray-300"></div>
         </div>
-        <ul
-          id="menu"
-          class="absolute -right-48 top-16 flex hidden flex-col items-center gap-8 text-2xl text-white md:static md:flex md:flex-row md:gap-10 md:text-base"
-        >
-          <li class="hover-line"><a href="#conoceme">conóceme</a></li>
-          <li class="hover-line"><a href="#encuentrame">encuéntrame</a></li>
-          <li class="hover-line"><a href="#clases">clases</a></li>
-          <li class="hover-line"><a href="#contactame">contáctame</a></li>
+        <!-- navigation -->
+        <ul id="menu" class="absolute w-[250px] -right-[250px] top-16 hidden flex-col items-center justify-center gap-8 text-2xl text-white md:static md:flex md:flex-row md:gap-10 md:text-base">
+          <li class="hover-line"><a href="#conoceme" id="navbar-about">conóceme</a></li>
+          <li class="hover-line"><a href="#encuentrame" id="navbar-where">encuéntrame</a></li>
+          <li class="hover-line"><a href="#clases" id="navbar-classes">clases</a></li>
+          <li class="hover-line"><a href="#contactame" id="navbar-contact">contáctame</a></li>
           <div class="flex gap-3">
-            <div id="spanish-flag" class="w-6 object-cover cursor-pointer">
-              <img src="./src/assets/spain.png" alt="español" />
+            <div id="spanish-flag" class="w-6 cursor-pointer object-cover">
+              <img src="./src/assets/spain.png" alt="español" title="Español"/>
             </div>
-            <div id="english-flag" class="w-6 object-cover cursor-pointer">
-              <img src="./src/assets/english.png" alt="español" />
+            <div id="english-flag" class="w-6 cursor-pointer object-cover">
+              <img src="./src/assets/english.png" alt="español" title="Inglés"/>
             </div>
           </div>
         </ul>
       </nav>
+      <!-- subtitle -->
       <div class="flex h-full translate-x-5 translate-y-60 justify-center">
-        <h1
-          class="text-4xl text-white"
-          data-aos="zoom-in-up"
-          data-aos-duration="2000"
-        >
-          exhala...
-        </h1>
-      </div>
-    </header>
-    <!-- about section -->
-    <section
-      style="background: linear-gradient(45deg, #cce7f1, #eef1f1)"
-      class="relative min-h-96 overflow-hidden p-10"
-      id="conoceme"
-    >
-      <div data-aos="fade-up" class="m-auto max-w-[1024px]">
-        <svg
-          viewBox="0 0 200 200"
-          xmlns="http://www.w3.org/2000/svg"
-          class="absolute -left-[30%] -top-[30%]"
-        >
-          <path
-            fill="rgb(132, 165, 178, .1)"
-            d="M42.8,-37.4C53.7,-20.5,59.5,-2.8,57.5,16.1C55.6,35,45.9,55,29.4,64.1C12.9,73.3,-10.3,71.4,-32.3,62.6C-54.4,53.7,-75.2,37.8,-77,20.3C-78.8,2.9,-61.5,-16.2,-45.5,-34.3C-29.5,-52.4,-14.7,-69.6,0.6,-70.1C15.9,-70.6,31.9,-54.4,42.8,-37.4Z"
-            transform="translate(100 100)"
-          />
-        </svg>
-        <svg
-          viewBox="0 0 200 200"
-          xmlns="http://www.w3.org/2000/svg"
-          class="absolute -bottom-[30%] -right-[30%]"
-        >
-          <path
-            fill="rgb(132, 165, 178, .1)"
-            d="M42.8,-37.4C53.7,-20.5,59.5,-2.8,57.5,16.1C55.6,35,45.9,55,29.4,64.1C12.9,73.3,-10.3,71.4,-32.3,62.6C-54.4,53.7,-75.2,37.8,-77,20.3C-78.8,2.9,-61.5,-16.2,-45.5,-34.3C-29.5,-52.4,-14.7,-69.6,0.6,-70.1C15.9,-70.6,31.9,-54.4,42.8,-37.4Z"
-            transform="translate(100 100)"
-          />
-        </svg>
-        <div class="flex flex-col items-center justify-center">
-          <div
-            class="mb-5 text-[10vw] uppercase tracking-widest text-[rgba(0,0,0,.1)] md:text-7xl"
+       <h1 id="hero-subtitle" class="text-4xl text-white" data-aos="zoom-in-up" data-aos-duration="2000">
+         exhala...
+       </h1>
+     </div>
+    </header><main>
+      
+      <!-- about section -->
+      <section
+        style="background: linear-gradient(45deg, #cce7f1, #eef1f1)"
+        class="relative min-h-96 overflow-hidden p-10"
+        id="conoceme"
+      >
+        <div data-aos="fade-up" class="m-auto max-w-[1024px]">
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute -left-[30%] -top-[30%]"
           >
-            conóceme
-          </div>
-          <div class="mb-3 flex flex-col items-center justify-center">
-            <div class="h-32 w-32 overflow-hidden rounded-full border">
-              <img
-                src="./src/assets/avatar.png"
-                alt="avatar-edu"
-                class="h-full w-full object-cover"
-              />
+            <path
+              fill="rgb(132, 165, 178, .1)"
+              d="M42.8,-37.4C53.7,-20.5,59.5,-2.8,57.5,16.1C55.6,35,45.9,55,29.4,64.1C12.9,73.3,-10.3,71.4,-32.3,62.6C-54.4,53.7,-75.2,37.8,-77,20.3C-78.8,2.9,-61.5,-16.2,-45.5,-34.3C-29.5,-52.4,-14.7,-69.6,0.6,-70.1C15.9,-70.6,31.9,-54.4,42.8,-37.4Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute -bottom-[30%] -right-[30%]"
+          >
+            <path
+              fill="rgb(132, 165, 178, .1)"
+              d="M42.8,-37.4C53.7,-20.5,59.5,-2.8,57.5,16.1C55.6,35,45.9,55,29.4,64.1C12.9,73.3,-10.3,71.4,-32.3,62.6C-54.4,53.7,-75.2,37.8,-77,20.3C-78.8,2.9,-61.5,-16.2,-45.5,-34.3C-29.5,-52.4,-14.7,-69.6,0.6,-70.1C15.9,-70.6,31.9,-54.4,42.8,-37.4Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+          <div class="flex flex-col items-center justify-center">
+            <div id="about-heading" class="mb-5 text-[10vw] uppercase tracking-widest text-[rgba(0,0,0,.1)] md:text-7xl">
+              conóceme
             </div>
-            <div class="ml-3 text-2xl">Edu Azevedo</div>
+            <div class="mb-3 flex flex-col items-center justify-center">
+              <div class="h-32 w-32 overflow-hidden rounded-full border">
+                <img src="./src/assets/avatar.png" alt="avatar-edu" class="h-full w-full object-cover" />
+              </div>
+              <div class="ml-3 text-2xl">Edu Azevedo</div>
+            </div>
           </div>
+          <div id="about-content" class="flex flex-col gap-3"></div>
         </div>
-        <!-- about section written in spanish -->
-        <div id="spanish" class="flex flex-col gap-3">
-          <p>
-            Edu fue entrenado previamente como Instructor de Yoga en Rishikesh,
-            India. Además de sus habilidades en prácticas de Hatha, Ashtanga y
-            Vinyasa, su conocimiento de las estructuras musculares y
-            esqueléticas mejora su capacidad para guiar a los estudiantes a
-            través de sus posturas.
-          </p>
-          <p>
-            Nacido de Brasil, Edu ha pasado los últimos 10 años compartiendo su
-            amor por el yoga con el mundo. Desde ayudar a amigos en São Paulo
-            hasta dar clases en Valencia, ahora está ubicado en Madrid, España.
-            Edu enseña clases semanales en toda Madrid, tanto en estudios de
-            yoga locales como al aire libre a lo largo del hermoso Madrid Río.
-          </p>
-          <p>
-            Edu también está capacitado en masaje tántrico y ofrece clases
-            particulares.
-          </p>
-        </div>
-        <!-- about section written in inglés -->
-        <div id="english" class="flex-col gap-3 hidden">
-          <p>
-            Edu was trained as a Yoga Instructor in Rishikesh, India. In
-            addition to his experience in Hatha, Ashtanga, and Vinyasa
-            techniques, his knowledge of muscular and skeletal structures
-            enhances his ability to guide his students through their postures.
-          </p>
-          <p>
-            Born in Brazil, Edu has spent the last 10 years sharing his love of
-            yoga with the world. From helping out his friends in Sāo Paulo to
-            teaching classes in Valencia, he now calls Madrid, Spain home. Edu
-            teaches weekly classes throughout Madrid, both in local studios as
-            well as outdoors alongside the beautiful Madrid Rio
-          </p>
-          <p>
-            Edu is also a talented tantric masseuse and offers private yoga
-            classes
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- encuentrame section -->
-    <section
-      id="encuentrame"
-      style="background: linear-gradient(45deg, #84a5b2, #cbe1e1)"
-      class="min-h-96 p-10"
-    >
-      <div data-aos="fade-up" class="m-auto max-w-[1024px]">
-        <div class="flex flex-col items-center justify-center">
-          <div
-            class="mb-5 text-[10vw] uppercase tracking-widest text-white md:text-7xl"
-          >
-            encúentrame
-          </div>
-          <div id="poses-div" class="flex flex-wrap"></div>
-        </div>
-      </div>
-    </section>
-    <!-- classes section -->
-    <section
-      id="clases"
-      style="background: linear-gradient(45deg, #cce7f1, #eef1f1)"
-      class="min-h-96 p-10"
-    >
-      <div data-aos="fade-up" class="m-auto max-w-[1024px]">
-        <div class="flex flex-col items-center justify-center">
-          <div
-            class="mb-5 text-[10vw] uppercase tracking-widest text-[rgba(0,0,0,.1)] md:text-7xl"
-          >
-            clases
-          </div>
-          <div>
-            <p class="text-center">
-              Edu esta de vacaciones. Resumen las clases a partir de <br />1
-              septiembre
-            </p>
-            <div class="mt-5 text-center text-7xl text-white">
-              <i class="fa-solid fa-calendar-xmark"></i>
+      </section>
+      <!-- encuentrame section -->
+      <section
+        id="encuentrame"
+        style="background: linear-gradient(45deg, #84a5b2, #cbe1e1)"
+        class="min-h-96 p-10"
+      >
+        <div data-aos="fade-up" class="m-auto max-w-[1024px]">
+          <div class="flex flex-col items-center justify-center">
+            <div id="where-heading" class="mb-5 text-[10vw] uppercase tracking-widest text-white md:text-7xl">
+              encúentrame
+            </div>
+            <div id="where-content">
+              <div id="poses-div" class="flex flex-wrap"></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- contact section -->
-    <section
-      id="contactame"
-      style="background: linear-gradient(45deg, #84a5b2, #cbe1e1)"
-      class="p-10"
-    >
-      <div data-aos="fade-up" class="m-auto max-w-[1024px]">
-        <div class="flex flex-col items-center justify-center">
-          <div
-            class="mb-5 text-[10vw] uppercase tracking-widest text-white md:text-7xl"
-          >
-            contáctame
+      </section>
+      <!-- classes section -->
+      <section
+        id="classes"
+        style="background: linear-gradient(45deg, #cce7f1, #eef1f1)"
+        class="min-h-96 p-10"
+      >
+        <div data-aos="fade-up" class="m-auto max-w-[1024px]">
+          <div class="flex flex-col items-center justify-center">
+            <div id="classes-heading" class="mb-5 text-[10vw] uppercase tracking-widest text-[rgba(0,0,0,.1)] md:text-7xl">
+              clases
+            </div>
+            <div>
+              <p id="classes-content" class="text-center">
+                Edu esta de vacaciones. Resumen las clases a partir de <br />1
+                septiembre
+              </p>
+              <div class="mt-5 text-center text-7xl text-white">
+                <i class="fa-solid fa-calendar-xmark"></i>
+              </div>
+            </div>
           </div>
-          <a href="https://wa.me/34622722429"
-            ><div
-              class="active::bg-[#142328] group cursor-pointer rounded-3xl bg-[#f3f9f9] px-5 py-3 shadow-lg transition duration-300 hover:bg-[#142328] hover:text-white active:text-white"
-            >
-              <span class="group-hover:text-[#25d366]"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></span>
-              Contacta por Whatsapp
-            </div></a
-          >
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- contact section -->
+      <section
+        id="contactame"
+        style="background: linear-gradient(45deg, #84a5b2, #cbe1e1)"
+        class="p-10"
+      >
+        <div data-aos="fade-up" class="m-auto max-w-[1024px]">
+          <div class="flex flex-col items-center justify-center">
+            <div id="contact-heading" class="mb-5 text-[10vw] uppercase tracking-widest text-white md:text-7xl">
+              contáctame
+            </div>
+            <a href="https://wa.me/34622722429">
+              <div class="active::bg-[#142328] group cursor-pointer rounded-3xl bg-[#f3f9f9] px-5 py-3 shadow-lg transition duration-300 hover:bg-[#142328] hover:text-white active:text-white">
+                <span class="group-hover:text-[#25d366]"><i class="fa-brands fa-whatsapp"></i></span>
+                <span id="contact-content">Contacta por Whatsapp</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="flex items-center justify-center bg-[#142328] p-10">
-      <p class="text-white">Developed by &copy; Greg Minezzi 2024</p>
+      <p id="footer-content" class="text-white">
+        Developed by &copy; Greg Minezzi 2024
+      </p>
     </footer>
     <script>
       AOS.init();

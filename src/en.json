@@ -1,0 +1,30 @@
+{
+  "navbar": {
+    "about": "about",
+    "where": "where",
+    "classes": "classes",
+    "contact": "contact"
+  },
+  "hero": {
+    "subtitle": "exhale..."
+  },
+  "about": {
+    "heading": "about",
+    "content": "<p>Edu was trained as a Yoga Instructor in Rishikesh, India. In addition to his experience in Hatha, Ashtanga, and Vinyasa techniques, his knowledge of muscular and skeletal structures enhances his ability to guide his students through their postures. </p> <p> Born in Brazil, Edu has spent the last 10 years sharing his love of yoga with the world. From helping out his friends in Sāo Paulo to teaching classes in Valencia, he now calls Madrid, Spain home. Edu teaches weekly classes throughout Madrid, both in local studios as well as outdoors alongside the beautiful Madrid Rio </p> <p> Edu is also a talented tantric masseuse and offers private yoga classes"
+  },
+  "where": {
+    "heading": "where",
+    "content": "where can you find me.  here"
+  },
+  "classes": {
+    "heading": "classes",
+    "content": "Edu is on vacation.  Classes will resume on September 1"
+  },
+  "contact": {
+    "heading": "contact",
+    "content": "contact by Whatsapp"
+  },
+  "footer": {
+    "content": "Developed by &copy; Greg Minezzi 2024"
+  }
+}
