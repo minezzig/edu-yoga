@@ -728,6 +728,10 @@ video {
   width: 250px;
 }
 
+.w-4{
+  width: 1rem;
+}
+
 .max-w-\[1024px\]{
   max-width: 1024px;
 }
@@ -1125,6 +1129,14 @@ video {
     position: static;
   }
 
+  .md\:-right-\[250px\]{
+    right: -250px;
+  }
+
+  .md\:-right-0{
+    right: -0px;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -1139,6 +1151,10 @@ video {
 
   .md\:w-16{
     width: 4rem;
+  }
+
+  .md\:w-auto{
+    width: auto;
   }
 
   .md\:flex-row{
