@@ -664,6 +664,10 @@ video {
   min-height: 24rem;
 }
 
+.min-h-\[500px\]{
+  min-height: 500px;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -1034,5 +1038,36 @@ video {
 
   .md\:outline-1{
     outline-width: 1px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:static{
+    position: static;
+  }
+
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:w-auto{
+    width: auto;
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
+  .lg\:gap-10{
+    gap: 2.5rem;
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
