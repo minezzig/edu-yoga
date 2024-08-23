@@ -1,8 +1,5 @@
 export async function loadTranslations(lang) {
-  console.log("in load")
-  const response = await fetch(`./src/${lang}.json`);
-  console.log("resposne", response)
+  const response = await fetch(`/${lang}.json`);
   const translations = await response.json();
-  console.log("HERE", translations)
   return translations;
 }

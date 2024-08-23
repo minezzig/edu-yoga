@@ -55,7 +55,6 @@ getPoses();
 
 // translation  ----------------------------------------------------
 async function setLanguage(lang) {
-  console.log("SET")
   const translations = await loadTranslations(lang);
   // nav
   document.getElementById("navbar-about").innerHTML = translations.navbar.about;
@@ -80,7 +79,7 @@ async function setLanguage(lang) {
   document.getElementById("footer-content").innerHTML = translations.footer.content;
 }
 // onClick flag will set language
-englishFlag.addEventListener("click", () => console.log("english"));
+englishFlag.addEventListener("click", () => setLanguage("en"));
 spanishFlag.addEventListener("click", () => setLanguage("es"));
 
 // Set the default language when the page loads
