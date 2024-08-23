@@ -1,8 +1,18 @@
+// navigation
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("menu");
 const header = document.getElementById("header");
 const links = document.querySelectorAll("#menu a");
+// poses
 const posesDiv = document.getElementById("poses-div");
+// language translation
+const spanishFlag = document.getElementById("spanish-flag")
+const englishFlag= document.getElementById("english-flag")
+const spanish = document.getElementById("spanish")
+const english= document.getElementById("english")
+
+
+// navigation ----------------------------------------------------
 const toggleMenu = () => {
   // main page slides to left to reveal navbar
   header.classList.toggle("-translate-x-[250px]");
@@ -23,6 +33,7 @@ const toggleMenu = () => {
 // toggle menu on hamburger click
 hamburger.addEventListener("click", toggleMenu);
 
+// poses ----------------------------------------------------
 // get a list of images from yoga API for examples
 const getPoses = async () => {
   const response = await fetch(
@@ -41,3 +52,14 @@ const getPoses = async () => {
   posesDiv.innerHTML = posesHTML.slice(10).join("");
 };
 getPoses();
+
+// languages  ----------------------------------------------------
+const changeLanguage = () => {
+  english.classList.toggle("hidden")  
+  english.classList.toggle("flex")
+  spanish.classList.toggle("hidden")
+  spanish.classList.toggle("flex")
+}
+englishFlag.addEventListener("click", changeLanguage);
+spanishFlag.addEventListener("click", changeLanguage);
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <link href="./src/index.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/c82e315a12.js"
@@ -24,7 +24,7 @@
     <meta property="og:url" content="https://eduyoga.vercel.app" />
     <title>Edu Azevedo Yoga</title>
   </head>
-  <body class="font-quicksand bg-[#142328]">
+  <body class="bg-[#142328] font-quicksand">
     <header
       id="header"
       class="h-dvh bg-gray-700 bg-[url('./assets/hero.png')] bg-cover bg-center transition duration-500"
@@ -60,19 +60,55 @@
           <li class="hover-line"><a href="#encuentrame">encuéntrame</a></li>
           <li class="hover-line"><a href="#clases">clases</a></li>
           <li class="hover-line"><a href="#contactame">contáctame</a></li>
+          <div class="flex gap-3">
+            <div id="spanish-flag" class="w-6 object-cover cursor-pointer">
+              <img src="./src/assets/spain.png" alt="español" />
+            </div>
+            <div id="english-flag" class="w-6 object-cover cursor-pointer">
+              <img src="./src/assets/english.png" alt="español" />
+            </div>
+          </div>
         </ul>
       </nav>
       <div class="flex h-full translate-x-5 translate-y-60 justify-center">
-        <h1 class="text-4xl text-white" data-aos="zoom-in-up" data-aos-duration="2000">exhala...</h1>
+        <h1
+          class="text-4xl text-white"
+          data-aos="zoom-in-up"
+          data-aos-duration="2000"
+        >
+          exhala...
+        </h1>
       </div>
     </header>
     <!-- about section -->
     <section
       style="background: linear-gradient(45deg, #cce7f1, #eef1f1)"
-      class="min-h-96 p-10"
+      class="relative min-h-96 overflow-hidden p-10"
       id="conoceme"
     >
-      <div data-aos="fade-up" class="max-w-[1024px] m-auto">
+      <div data-aos="fade-up" class="m-auto max-w-[1024px]">
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute -left-[30%] -top-[30%]"
+        >
+          <path
+            fill="rgb(132, 165, 178, .1)"
+            d="M42.8,-37.4C53.7,-20.5,59.5,-2.8,57.5,16.1C55.6,35,45.9,55,29.4,64.1C12.9,73.3,-10.3,71.4,-32.3,62.6C-54.4,53.7,-75.2,37.8,-77,20.3C-78.8,2.9,-61.5,-16.2,-45.5,-34.3C-29.5,-52.4,-14.7,-69.6,0.6,-70.1C15.9,-70.6,31.9,-54.4,42.8,-37.4Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute -bottom-[30%] -right-[30%]"
+        >
+          <path
+            fill="rgb(132, 165, 178, .1)"
+            d="M42.8,-37.4C53.7,-20.5,59.5,-2.8,57.5,16.1C55.6,35,45.9,55,29.4,64.1C12.9,73.3,-10.3,71.4,-32.3,62.6C-54.4,53.7,-75.2,37.8,-77,20.3C-78.8,2.9,-61.5,-16.2,-45.5,-34.3C-29.5,-52.4,-14.7,-69.6,0.6,-70.1C15.9,-70.6,31.9,-54.4,42.8,-37.4Z"
+            transform="translate(100 100)"
+          />
+        </svg>
         <div class="flex flex-col items-center justify-center">
           <div
             class="mb-5 text-[10vw] uppercase tracking-widest text-[rgba(0,0,0,.1)] md:text-7xl"
@@ -90,24 +126,45 @@
             <div class="ml-3 text-2xl">Edu Azevedo</div>
           </div>
         </div>
-        <div class="flex flex-col gap-3">
+        <!-- about section written in spanish -->
+        <div id="spanish" class="flex flex-col gap-3">
           <p>
             Edu fue entrenado previamente como Instructor de Yoga en Rishikesh,
             India. Además de sus habilidades en prácticas de Hatha, Ashtanga y
-            Vinyasa, su conocimiento de las estructuras musculares y esqueléticas
-            mejora su capacidad para guiar a los estudiantes a través de sus
-            posturas.
+            Vinyasa, su conocimiento de las estructuras musculares y
+            esqueléticas mejora su capacidad para guiar a los estudiantes a
+            través de sus posturas.
           </p>
           <p>
             Nacido de Brasil, Edu ha pasado los últimos 10 años compartiendo su
             amor por el yoga con el mundo. Desde ayudar a amigos en São Paulo
             hasta dar clases en Valencia, ahora está ubicado en Madrid, España.
-            Edu enseña clases semanales en toda Madrid, tanto en estudios de yoga
-            locales como al aire libre a lo largo del hermoso Madrid Río.
+            Edu enseña clases semanales en toda Madrid, tanto en estudios de
+            yoga locales como al aire libre a lo largo del hermoso Madrid Río.
           </p>
           <p>
             Edu también está capacitado en masaje tántrico y ofrece clases
             particulares.
+          </p>
+        </div>
+        <!-- about section written in inglés -->
+        <div id="english" class="flex-col gap-3 hidden">
+          <p>
+            Edu was trained as a Yoga Instructor in Rishikesh, India. In
+            addition to his experience in Hatha, Ashtanga, and Vinyasa
+            techniques, his knowledge of muscular and skeletal structures
+            enhances his ability to guide his students through their postures.
+          </p>
+          <p>
+            Born in Brazil, Edu has spent the last 10 years sharing his love of
+            yoga with the world. From helping out his friends in Sāo Paulo to
+            teaching classes in Valencia, he now calls Madrid, Spain home. Edu
+            teaches weekly classes throughout Madrid, both in local studios as
+            well as outdoors alongside the beautiful Madrid Rio
+          </p>
+          <p>
+            Edu is also a talented tantric masseuse and offers private yoga
+            classes
           </p>
         </div>
       </div>
@@ -118,7 +175,7 @@
       style="background: linear-gradient(45deg, #84a5b2, #cbe1e1)"
       class="min-h-96 p-10"
     >
-      <div data-aos="fade-up" class="max-w-[1024px] m-auto">
+      <div data-aos="fade-up" class="m-auto max-w-[1024px]">
         <div class="flex flex-col items-center justify-center">
           <div
             class="mb-5 text-[10vw] uppercase tracking-widest text-white md:text-7xl"
@@ -135,7 +192,7 @@
       style="background: linear-gradient(45deg, #cce7f1, #eef1f1)"
       class="min-h-96 p-10"
     >
-      <div data-aos="fade-up" class="max-w-[1024px] m-auto">
+      <div data-aos="fade-up" class="m-auto max-w-[1024px]">
         <div class="flex flex-col items-center justify-center">
           <div
             class="mb-5 text-[10vw] uppercase tracking-widest text-[rgba(0,0,0,.1)] md:text-7xl"
@@ -160,7 +217,7 @@
       style="background: linear-gradient(45deg, #84a5b2, #cbe1e1)"
       class="p-10"
     >
-      <div data-aos="fade-up" class="max-w-[1024px] m-auto">
+      <div data-aos="fade-up" class="m-auto max-w-[1024px]">
         <div class="flex flex-col items-center justify-center">
           <div
             class="mb-5 text-[10vw] uppercase tracking-widest text-white md:text-7xl"
